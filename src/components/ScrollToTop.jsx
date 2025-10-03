@@ -24,8 +24,8 @@ export default function ScrollToTopButton() {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-6 right-6 p-3 rounded-full bg-yellow-400 text-gray-900 shadow-lg transition-opacity duration-300 ${
-        visible ? "opacity-100" : "opacity-0 pointer-events-none"
+      className={`fixed bottom-6 right-6 p-3 rounded-full  bg-yellow-400 text-gray-900 shadow-lg transition-opacity duration-300 ${
+        visible ? "opacity-100 cursor-pointer" : "opacity-0 pointer-events-none"
       } hover:bg-yellow-300`}
     >
       <ChevronUpIcon className="w-6 h-6" />

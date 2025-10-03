@@ -80,7 +80,7 @@ export default function ChampionPage() {
             <img
               src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_${skin.num}.jpg`}
               alt={skin.name}
-              className="w-full h-[500px] object-cover rounded-lg shadow-lg"
+              className="w-full h-[500px] object-fill rounded-lg shadow-lg"
             />
           </SwiperSlide>
         ))}

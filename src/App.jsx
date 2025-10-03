@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import ChampionGrid from "./components/ChampionGrid";
 import ChampionPage from "./components/ChampionPage";
 import Shuffle from './components/Shuffle';
@@ -29,7 +29,7 @@ function App() {
 
   if (loading) return <p className="text-center mt-10">Loading champions...</p>;
 
-  // filtriranje šampiona po searchTerm
+  
   const filteredChampions = champions.filter((champ) =>
     champ.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -58,11 +58,11 @@ function App() {
                 />
               </h1>
 
-             {/* Search input sa ikonicom lupa */}
+             
 <div className="flex justify-center mb-6">
   <div className="relative w-full sm:w-1/2 md:w-1/3">
     <span className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
-      {/* Lupa ikonica */}
+ 
       <svg
         className="w-5 h-5 text-gray-300"
         fill="none"
